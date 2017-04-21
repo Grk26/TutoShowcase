@@ -26,23 +26,23 @@ dependencies {
 
 ext {
     bintrayRepo = 'maven'
-    bintrayName = 'TutoShowcase'
-    orgName = 'florent37'
+    bintrayName = 'NewTutoShowcase'
+    orgName = 'rtapps'
 
-    publishedGroupId = 'com.github.florent37'
-    libraryName = 'TutoShowcase'
-    artifact = 'tutoshowcase'
+    publishedGroupId = 'com.github.rtapps'
+    libraryName = 'NewTutoShowcase'
+    artifact = 'newtutoshowcase'
 
-    libraryDescription = 'TutoShowcase'
+    libraryDescription = 'NewTutoShowcase'
 
-    siteUrl = 'https://github.com/florent37/TutoShowcase'
-    gitUrl = 'https://github.com/florent37/TutoShowcase.git'
+    siteUrl = 'https://github.com/Grk26/TutoShowcase'
+    gitUrl = 'https://github.com/Grk26/TutoShowcase.git'
 
     libraryVersion = rootProject.ext.libraryVersion
 
-    developerId = 'florent37'
-    developerName = 'Florent Champigny'
-    developerEmail = 'champigny.florent@gmail.com'
+    developerId = 'grk26'
+    developerName = 'Gourav Mehta'
+    developerEmail = 'grk4675@gmail.com'
 
     licenseName = 'The Apache Software License, Version 2.0'
     licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
