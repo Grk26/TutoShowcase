@@ -40,6 +40,7 @@ public final class TutoShowcase {
     }
 
     public static final float DEFAULT_ADDITIONAL_RADIUS_RATIO = 1.5f;
+    public static final Boolean FULLCLICKENABLE = true;
     private static final String SHARED_TUTO = "SHARED_TUTO";
     private FrameLayout container;
     private TutoView tutoView;
@@ -83,6 +84,10 @@ public final class TutoShowcase {
     public TutoShowcase setFitsSystemWindows(boolean fitsSystemWindows) {
         this.fitsSystemWindows = fitsSystemWindows;
         return this;
+    }
+    public TutoShowcase setFullViewDismissClick(boolean dismiss)
+    {
+        this.FULLCLICKENABLE=dismiss;
     }
 
     public TutoShowcase setListener(Listener listener) {
@@ -147,7 +152,14 @@ public final class TutoShowcase {
         container.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                dismiss();
+                if(this.FULLCLICKENABLE)
+                {
+                    dismiss();
+                }
+                else
+                {
+                    
+                }
             }
         });
         return this;
